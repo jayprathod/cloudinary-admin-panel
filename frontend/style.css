@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.tab-container {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #e9e9e9;
+}
+
+.tab.active {
+  background-color: #ffffff;
+  font-weight: bold;
+  border-top: 3px solid #4caf50;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.user-table th,
+.user-table td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #f4f4f9;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.user-table td img.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.no-data {
+  text-align: center;
+  margin: 20px 0;
+  color: #888;
+  font-style: italic;
+}
+
+#userList button {
+  padding: 8px 15px;
+  background-color: #f44336;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px; /* Rounded edges for a modern look */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100px; /* Set a fixed width */
+  text-align: center; /* Center text inside the button */
+  overflow: hidden; /* Prevent content overflow */
+  white-space: nowrap; /* Prevent wrapping of text */
+}
+
+#userList button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+#userList button:active {
+  background-color: #c13527; /* Darker shade on click */
+  transform: scale(0.98); /* Slight shrink effect on click */
+}
+
+#userList button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5); /* Focus indicator */
+}
+
+/* Popup container */
+.profile-popup {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Popup profile picture */
+.popup-profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
