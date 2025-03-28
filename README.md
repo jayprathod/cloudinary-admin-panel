@@ -42,7 +42,6 @@ cloudinary-admin-panel/
 │   ├── index.html         # Main HTML file
 │   ├── script.js          # Frontend JavaScript
 │   └── style.css          # Frontend CSS styles
-├── BackUp/                # Backup files (ignored in Git)
 └── .gitignore             # Git ignore configuration
 ```
 
